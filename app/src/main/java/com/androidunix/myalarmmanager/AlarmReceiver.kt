@@ -42,6 +42,7 @@ class AlarmReceiver : BroadcastReceiver() {
             if (type.equals(TYPE_ONE_TIME, ignoreCase = true)) ID_ONETIME else ID_REPEATING
 
         showToast(context, message, title)
+        showAlarmNotification(context, title, message, notifId)
     }
 
     private fun showToast(context: Context, message: String?, title: String) {
